@@ -8,5 +8,12 @@
     "start": "node index.js"
   },
   "author": "Djarallah Brahim",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.15",
+    "moment": "^2.22.2",
+    "bcrypt": "^3.0.0",
+    "jsonwebtoken": "^8.3.0"
+  }
 }
