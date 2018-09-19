@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 exports.auth = (req, res)=>{
   const {email, password} = req.body ;
 
-  if(!email || !password){
+  if( !email || !password ){
     return res.status(422).send({errors : [{title: "Data messing !!", detail: "Provide email and password"}]});
   }
   User.findOne({email}, function(err, user){
